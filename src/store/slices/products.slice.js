@@ -11,6 +11,7 @@ const productsSlice = createSlice({
 })
 
 export const { setProductsGlobal } = productsSlice.actions
+
 export default productsSlice.reducer
 
 export const getAllProducts = () => (dispatch) => {

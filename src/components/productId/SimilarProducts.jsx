@@ -31,8 +31,6 @@ const SimilarProducts = ({ product }) => {
     }
   }, [idCategory])
 
-  console.log(product)
-  console.log(categories);
 
   return (
     <div>

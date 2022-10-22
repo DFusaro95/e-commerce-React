@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import ProductInfo from '../../components/productId/ProductInfo'
-import SimilarProducts from '../../components/productId/SimilarProducts'
+import ProductInfo from '../components/productId/ProductInfo'
+import SimilarProducts from '../components/productId/SimilarProducts'
+import SliderImgs from '../components/productId/SliderImgs'
 
 const ProductId = () => {
 
@@ -19,6 +20,9 @@ const ProductId = () => {
 
   return (
     <div>
+      {
+        product && <SliderImgs product={product} />
+      }
       <ProductInfo
         product={product} />
       <SimilarProducts product={product} />
