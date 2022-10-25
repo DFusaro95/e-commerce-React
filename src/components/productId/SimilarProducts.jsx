@@ -33,9 +33,9 @@ const SimilarProducts = ({ product }) => {
 
 
   return (
-    <div>
-      <h2>SimilarProducts</h2>
-      <div>
+    <div className='content'>
+      <h2 >SimilarProducts</h2>
+      <div className='content__simprod'>
         {
           similarProducts?.map(prod => {
             if (product?.id !== prod.id) {

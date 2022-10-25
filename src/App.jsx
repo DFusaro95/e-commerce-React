@@ -2,6 +2,7 @@
 // import { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Footer from './components/shared/Footer'
 import Header from './components/shared/Header'
 import Cart from './pages/Cart'
 import Home from './pages/Home'
@@ -47,6 +48,7 @@ function App() {
           <Route path='/purchases' element={<Purchases />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   )
 }

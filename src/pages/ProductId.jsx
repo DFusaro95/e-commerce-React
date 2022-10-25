@@ -20,11 +20,13 @@ const ProductId = () => {
 
   return (
     <div>
-      {
-        product && <SliderImgs product={product} />
-      }
-      <ProductInfo
-        product={product} />
+      <div className="detail__poduct-content">
+        {
+          product && <SliderImgs product={product} />
+        }
+        <ProductInfo
+          product={product} />
+      </div>
       <SimilarProducts product={product} />
     </div>
 

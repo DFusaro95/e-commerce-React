@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { getAllProductsCart } from '../../store/slices/cart.slice'
 import getConfig from '../../utils/getConfig'
+import './style/CardProduct.css'
 
 const CardProduts = ({ product }) => {
 
@@ -37,10 +38,10 @@ const CardProduts = ({ product }) => {
         <h3 className='prodcut__title'>{product.title}</h3>
         <div className='product__price'>
           <span className='product__price-label'>Price</span>
-          <p className='product__price-number'> ${product.price}</p>
+          <p className='product__price-number'> {product.price}</p>
         </div>
         <button onClick={handleAddCart} className='product__icon-container'>
-          <i className="product__icon fa-solid fa-cart-shopping">Add to card</i>
+          <i className="product__icon fa-solid fa-cart-shopping"></i>
         </button>
       </div>
     </article>

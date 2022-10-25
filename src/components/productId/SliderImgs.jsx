@@ -30,10 +30,6 @@ const SliderImgs = ({ product }) => {
     setIndexImg(2)
   }
 
-
-
-
-
   return (
     <div className='slider'>
       <button onClick={handlePrev} className='slider__prev'>&#60;</button>
@@ -49,9 +45,11 @@ const SliderImgs = ({ product }) => {
         </div>
       </div>
       <button onClick={handleNext} className='slider__next'>&#62;</button>
-      <button onClick={handleP1} >1</button>
-      <button onClick={handleP2}>2</button>
-      <button onClick={handleP3} >3</button>
+      <div className="content__btn">
+        <button className='circle' onClick={handleP1} >1</button>
+        <button className='circle' onClick={handleP2}>2</button>
+        <button className='circle' onClick={handleP3} >3</button>
+      </div>
     </div>
   )
 }

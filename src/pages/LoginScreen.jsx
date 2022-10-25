@@ -40,7 +40,7 @@ const LoginScreen = () => {
   }
 
   return (
-    <div>
+    <div className='login'>
       <form onSubmit={handleSubmit(submit)}>
         <div>
           <label htmlFor="email">Email</label>
