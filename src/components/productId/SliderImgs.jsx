@@ -29,7 +29,7 @@ const SliderImgs = ({ product }) => {
   const handleP3 = () => {
     setIndexImg(2)
   }
-
+  console.log(product.productImgs)
   return (
     <div className='slider'>
       <button onClick={handlePrev} className='slider__prev'>&#60;</button>
@@ -46,9 +46,9 @@ const SliderImgs = ({ product }) => {
       </div>
       <button onClick={handleNext} className='slider__next'>&#62;</button>
       <div className="content__btn">
-        <button className='circle' onClick={handleP1} >1</button>
-        <button className='circle' onClick={handleP2}>2</button>
-        <button className='circle' onClick={handleP3} >3</button>
+        <div className="miniatura"><img className='circle' src={product.productImgs[0]} alt="" onClick={handleP1} /></div>
+        <div className="miniatura"><img className='circle' src={product.productImgs[1]} alt="" onClick={handleP2} /></div>
+        <div className="miniatura"><img className='circle' src={product.productImgs[2]} alt="" onClick={handleP3} /></div>
       </div>
     </div>
   )
