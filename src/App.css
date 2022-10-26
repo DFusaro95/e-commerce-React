@@ -11,14 +11,20 @@
 }
 
 .miniatura {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   transition: filter 100ms ease;
 }
 
 .miniatura:hover {
   transition: filter 100ms ease;
   transform: scale(1.2);
+}
+
+.selected {
+  border: 2px solid #f85555;
+  border-radius: 6px;
+  padding: 2px;
 }
 
 .circle {

@@ -46,9 +46,9 @@ const SliderImgs = ({ product }) => {
       </div>
       <button onClick={handleNext} className='slider__next'>&#62;</button>
       <div className="content__btn">
-        <div className="miniatura"><img className='circle' src={product.productImgs[0]} alt="" onClick={handleP1} /></div>
-        <div className="miniatura"><img className='circle' src={product.productImgs[1]} alt="" onClick={handleP2} /></div>
-        <div className="miniatura"><img className='circle' src={product.productImgs[2]} alt="" onClick={handleP3} /></div>
+        <div className={`miniatura ${indexImg == 0 ? 'selected' : ''}`}><img className='circle' src={product.productImgs[0]} alt="" onClick={handleP1} /></div>
+        <div className={`miniatura ${indexImg == 1 ? 'selected' : ''}`}><img className='circle' src={product.productImgs[1]} alt="" onClick={handleP2} /></div>
+        <div className={`miniatura ${indexImg == 2 ? 'selected' : ''}`}><img className='circle' src={product.productImgs[2]} alt="" onClick={handleP3} /></div>
       </div>
     </div>
   )
