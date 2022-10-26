@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import './styles/LoginScreen.css'
 
 const LoginScreen = () => {
 
@@ -32,25 +33,26 @@ const LoginScreen = () => {
 
   if (isLogged) {
     return (
-      <div>
-        <h2>User Logged ✅</h2>
-        <button onClick={handleLogout}>Logout</button>
+      <div className='login'>
+        <h2 className='login-success__title'>User Logged ✔</h2>
+        <button className='login-success__btn' onClick={handleLogout}>Logout</button>
       </div>
     )
   }
 
   return (
     <div className='login'>
-      <form onSubmit={handleSubmit(submit)}>
-        <div>
+      <h2 className='login-title'>Please Log-In</h2>
+      <form className='login-form' onSubmit={handleSubmit(submit)}>
+        <div className='login-input__container'>
           <label htmlFor="email">Email</label>
           <input type="email" id='email' {...register('email')} />
         </div>
-        <div>
+        <div className='login-input__container'>
           <label htmlFor="password">Password</label>
           <input type="password" id='password' {...register('password')} />
         </div>
-        <button>Login</button>
+        <button className='login-btn'>Login</button>
       </form>
     </div>
   )

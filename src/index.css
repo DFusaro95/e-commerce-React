@@ -34,6 +34,14 @@ button {
   border: none;
 }
 
+a {
+  color: #f85555;
+  text-decoration: none;
+}
+a:active{
+  color: #f85555;
+}
+
 
 .copyright {
   text-align: center;
@@ -42,18 +50,7 @@ button {
   background: #3c3c3b;
   padding: 30px 0;
   position: static;
-  bottom: 0;
   width: 100%;
-}
-
-.login {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100%;
-  text-decoration: none;
 }
 
 .header {
@@ -63,16 +60,16 @@ button {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__title {
-  color: #f85555;
   font-weight: 700;
   font-size: 1.5rem;
   display: block;
   padding: 14px 20px;
-
 }
+
 
 .header__list {
   display: flex;
@@ -82,12 +79,13 @@ button {
 }
 
 .header__item {
-  text-decoration: none;
   padding: 10px;
   width: max-content;
   text-align: center;
   border-right: 1px solid #aaa8;
 }
+
+
 
 .content {
   display: flex;

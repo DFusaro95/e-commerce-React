@@ -1,3 +1,7 @@
+
+.home{
+  margin-top: 60px;
+}
 .home__container {
   padding: 20px;
   display: flex;
